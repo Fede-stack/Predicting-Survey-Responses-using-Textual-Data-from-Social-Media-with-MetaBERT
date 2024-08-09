@@ -1,3 +1,8 @@
+import tensorflow as tf
+from tensorflow.keras.layers import Input, Reshape, MultiHeadAttention, Dense, Concatenate, Softmax, Dot, Add, Multiply
+from tensorflow.keras.models import Model
+from tensorflow.keras import optimizers, losses
+
 class WeightedSum(tf.keras.layers.Layer):
     def __init__(self, **kwargs):
         super(WeightedSum, self).__init__(**kwargs)
@@ -25,10 +30,7 @@ class ReduceSumLayer(Layer):
         return tf.reduce_sum(inputs, axis=self.axis)
 
 
-import tensorflow as tf
-from tensorflow.keras.layers import Input, Reshape, MultiHeadAttention, Dense, Concatenate, Softmax, Dot, Add, Multiply
-from tensorflow.keras.models import Model
-from tensorflow.keras import optimizers, losses
+
 
 class MetaGPTModel:
     def __init__(self, embedding_dim=768, max_posts=20, num_choices=4, learning_rate=1e-3):
