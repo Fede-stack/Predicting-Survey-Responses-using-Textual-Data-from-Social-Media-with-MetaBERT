@@ -6,5 +6,4 @@ This work is based on a workflow pipeline that utilizes a retrieval system to fi
 
 <img src="https://github.com/Fede-stack/Predicting-Survey-Responses-using-Textual-Data-from-Social-Media-with-MetaBERT/blob/main/images/reddit_retrieval.png" alt="" width="700">
 
-<img src="[https://github.com/Fede-stack/Predicting-Survey-Responses-using-Textual-Data-from-Social-Media-with-MetaBERT/blob/main/images/architecure.png](https://github.com/Fede-stack/Predicting-Survey-Responses-using-Textual-Data-from-Social-Media-with-MetaBERT/blob/main/images/architecture.png)" alt="" width="600">
 
