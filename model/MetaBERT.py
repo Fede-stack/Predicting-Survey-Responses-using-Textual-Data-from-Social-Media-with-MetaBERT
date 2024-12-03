@@ -80,7 +80,7 @@ class MetaGPTModel:
         predictions_concatenate = Concatenate(axis=-1)([out_soft_1, softmax_similarities])
 
         #third output - meta predictions
-        meta_predictions = Softmax(name='meta')(predictions_concatenate)
+        meta_predictions = Dense(4, activation='softmax',name='meta')(predictions_concatenate)
 
         #model identification
         meta_gpt = Model(inputs=[input_reddit, input_description] + inputs_choices, outputs=[out_soft_1, softmax_similarities, meta_predictions])
