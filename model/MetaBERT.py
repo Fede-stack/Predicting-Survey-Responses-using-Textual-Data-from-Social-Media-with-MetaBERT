@@ -87,7 +87,7 @@ class MetaGPTModel:
 
         meta_gpt.compile(optimizer=optimizers.Adam(learning_rate=self.learning_rate),
                          loss={'out': losses.SparseCategoricalCrossentropy(), 'soft': losses.SparseCategoricalCrossentropy(), 'meta': losses.SparseCategoricalCrossentropy()},
-                         loss_weights={'out': 0.33, 'soft': 0.33, 'meta': 0.33})
+                         loss_weights={'out': 0.15, 'soft': 0.15, 'meta': 0.7})
         
         return meta_gpt
 
