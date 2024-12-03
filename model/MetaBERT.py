@@ -97,7 +97,4 @@ class MetaGPTModel:
     def summary(self):
         self.model.summary()
 
-#example:
-# model_instance = MetaGPTModel()
-# model_instance.summary()
-# model = model_instance.get_model()
+
